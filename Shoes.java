@@ -22,5 +22,21 @@ public class Shoes {
     public float getPrice() {
         return price;
     }
+
+    public int getSize() {
+        return size;
+    }
+
+    public String getPhoto_route() {
+        return photo_route;
+    }
+
+    public boolean isSend_method() {
+        return send_method;
+    }
+
+    public int getCant_colors() {
+        return cant_colors;
+    }
     
 }

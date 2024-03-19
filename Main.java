@@ -5,6 +5,11 @@ public class Main{
 
     static Scanner sc = new Scanner(System.in);
 
+    /*
+     * Actividad calificable
+     * 
+     */
+
     public static void main(String[] args) {
     int menu_option = 0;
     System.out.println("Seleccione una opción del menú");
@@ -17,6 +22,7 @@ public class Main{
     switch (menu_option) {
         case 1:
             WomanMenu intance_woman = new WomanMenu();
+            intance_woman.option_menu();
             break;
         case 2:
             MenMenu intance_man = new MenMenu();
