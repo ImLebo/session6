@@ -19,10 +19,10 @@ public class Main{
             WomanMenu intance_woman = new WomanMenu();
             break;
         case 2:
-            
+            MenMenu intance_man = new MenMenu();
             break;
         case 3:
-            
+            System.out.println("Has salido del menu!");
             break;    
         default:
             break;
