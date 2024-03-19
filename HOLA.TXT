@@ -1,3 +1,4 @@
+package ACTIVIDADPROG2;
 import java.util.Scanner;
 
 
@@ -16,7 +17,7 @@ public class Main{
         
     switch (menu_option) {
         case 1:
-            WomanMenu intance_woman = new WomanMenu();
+            WomanMenu intance = new WomanMenu();
             break;
         case 2:
             
@@ -28,4 +29,5 @@ public class Main{
             break;
     }
     }
+
 }
