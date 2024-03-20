@@ -5,10 +5,12 @@ public class Main{
 
     static Scanner sc = new Scanner(System.in);
 
-    /*
-     * Actividad calificable
-     * 
-     */
+    // Actividad calificable:
+    // 1. Listar todos los tennis running de talla 38
+    // 2. Listar todos los tennis classic que tengan más de 5 colores disponible
+    // 3. Listar todos los tennis running y classic que tengan un precio mayor a USD150
+    // 4. Listar todos los tennis running cuyo envio a casa no este disponible
+
 
     public static void main(String[] args) {
     int menu_option = 0;

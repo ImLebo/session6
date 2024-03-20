@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class WomanMenu {
@@ -17,6 +18,8 @@ public class WomanMenu {
 
     option = sc.nextInt();
 
+    ArrayList<Shoes> shoesByPrice = new ArrayList<>();
+
     switch (option) {
         case 1:
             System.out.println("Calzado");
@@ -26,11 +29,27 @@ public class WomanMenu {
             Running intance_Running = new Running();
             intance_Running.addRunningShoes();
             System.out.println(intance_Running.showInformationShoes()); 
+            //Solucion ejercicio 1
+            intance_Running.showSize();
+            intance_Running.imprimirArreglo();
+            //Solucion del ejercicio 3
+            shoesByPrice = intance_Running.tennisByPrice();
+            imprimirArreglos(shoesByPrice);
+            //Solucion del ejercicio 4
+            System.out.println("Tennis con envio no disponible");
+            intance_Running.envio_nodispo();
+            intance_Running.impenvio_nodispo();
             }
             else if(new_option==2){
             Classic intance_Classic = new Classic();
             intance_Classic.addclassicShoes();
             System.out.println(intance_Classic.showInformationShoes());
+            //Solucion Ejercicio 2
+            intance_Classic.shoesNumberColors();
+            intance_Classic.imprimirArreglo();
+            //Solucion del Ejercicio 3
+            shoesByPrice = intance_Classic.tennisByPrice();
+            imprimirArreglos(shoesByPrice);
             } else {
             System.out.println("Opcion invalida");
             }
@@ -52,5 +71,11 @@ public class WomanMenu {
             System.out.println("Opcion no valida!");
             break;
     }
+    }
+    public void imprimirArreglos(ArrayList<Shoes> arrayList){
+
+        for (Shoes shoes : arrayList) {
+            System.out.println(shoes.price);
+        }
     }
 }
